@@ -1,6 +1,7 @@
-# DATUM Verified App Store for Umbrel
+# DATUM Verified Store for Umbrel
 
-This community app store lets anyone install **DATUM Verified** on umbrelOS and run the DATUM Gateway Discord and Telegram verify bots on their own homeserver.
+An Umbrel community app store that installs **DATUM Verified** on umbrelOS. It
+runs the DATUM Gateway Discord and Telegram verify bots on your own homeserver.
 
 ## Install on Umbrel
 
@@ -9,17 +10,22 @@ This community app store lets anyone install **DATUM Verified** on umbrelOS and 
 3. Paste this URL:
 
 ```text
-https://github.com/yudikorsou/datumverified-umbrel-app-store
+https://github.com/fossmining/datumverifiedstore
 ```
 
 4. Install **DATUM Verified**.
 5. Open the app and paste your Discord and/or Telegram bot tokens.
 
-Members then use `/verify` in your community. The bots stay on your Umbrel and recheck DATUM Gateway shares every 24 hours.
+Members then use `/verify` in your community. The bots stay on your Umbrel and
+recheck DATUM Gateway shares every 24 hours.
 
-An official App Store submission is also open against [getumbrel/umbrel-apps](https://github.com/getumbrel/umbrel-apps).
+An official App Store submission is also open against
+[getumbrel/umbrel-apps](https://github.com/getumbrel/umbrel-apps/pull/6144).
 
 ## Source
 
-- Discord bot: https://github.com/yudikorsou/datum-gateway-verify-bot
-- Telegram bot: https://github.com/yudikorsou/datum-gateway-telegram-verify-bot
+Both bots are built from one repository:
+[datum-gateway-verify-bot](https://github.com/fossmining/datum-gateway-verify-bot).
+
+- Discord bot: the repository root
+- Telegram bot: the [`telegram/`](https://github.com/fossmining/datum-gateway-verify-bot/tree/main/telegram) folder
